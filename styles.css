@@ -1,18 +1,24 @@
 body {
-  background-color: #F7F3E3;
-  font-family: 'Merriweather';
+  background-color: #9FB4C7;
+  font-family: 'Notica', serif;
   width: 100%;
 }
 
 p {
-  padding: 0 15px;
+  font-size: 1.1em;
   font-weight: 300;
+  text-align: justify;
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
 }
 
 /*header section */
 
 header {
-  background-color: #570000;
+  align-items: center;
+  background-color: #1B3B6F;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,9 +27,9 @@ header {
 }
 
 h1 {
-  color: #FDFFFF;
-  margin: 0px;
-  text-shadow: 1px 1px #000000;
+  color: #EEEEFF;
+  margin: 10px 0 10px 13%;
+  /*text-shadow: 2px 2px  5px #000103;*/
 }
 
 #biz-title{
@@ -35,42 +41,55 @@ nav {
   align-items: flex-end;
   display: flex;
   flex-direction: row;
+  margin-right: 13%;
 }
 
 .nav-links {
-  color: #FDFFFF;
+  color: #EEEEFF;
   margin-right: 10px;
-  text-shadow: 1px 1px 2px #000000;
+  /*text-shadow: 1px 1px 2px #000103;*/
   text-decoration: none;
 }
 
 /*picture and bio area*/
 
 main{
-  background-color: #FDFFFF;
+  background-color: #EEEEFF;
+  box-shadow: 2px 2px 10px 2px #000103;
   margin: 25px auto;
-  max-width: 80%;
+  max-width: 65%;
   padding: 15px 30px;
 }
 
 #intro {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 #picture {
-  max-width: 250px;
+  margin-top: 25px;
+  margin-right: 20px;
+  max-width: 320px;
+}
+
+img {
+  border: 5px outset #9FB798;
 }
 
 #bio {
-  margin-left: 20px;
-
+  max-width: 400px;
 }
 
-h3 {
-  margin-top: 0px;
+h2 {
+  margin-top: 25px;
   text-align: center;
+}
+
+#fred-bio {
+  margin: 0px 10px;
+  text-align: justify;
 }
 /*dispute-management area*/
 
@@ -85,20 +104,39 @@ h3 {
 }
 
 .lists {
+  padding-left: 0px;
   width: 250px;
 }
 
-li{
-   margin-bottom: 10px;
+li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
 
 /*footer*/
 footer{
-  color: #FDFFFF;
-  background-color: #570000;
+  align-items: center;
+  background-color: #1B3B6F;
+  color: #EEEEFF;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: "Cinzel"
+}
+
+#more-info {
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  #intro {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #bio {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -113,34 +151,55 @@ footer{
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 860px) {
   header {
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 
+  h1{
+    margin: 0;
+  }
+
   nav {
-    margin-top: 15px;
+    margin: 10px 0px;
   }
 
   .services {
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-left: 0px;
   }
 
   .lists {
     margin: 0px;
   }
+
 }
 
 @media (max-width: 450px) {
+  #biz-title{
+    display: block;
+    text-align: center;
+  }
+
+  #picture{
+    margin: 0;
+    max-width: 320px;
+  }
+
+  main {
+    margin: 0;
+    max-width: 100%;
+  }
+
   nav {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
   }
 
   .nav-links {

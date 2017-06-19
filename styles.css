@@ -1,5 +1,5 @@
 body {
-  background-color: #9FB4C7;
+  background-color: #747C92;
   font-family: 'Notica', serif;
   width: 100%;
 }
@@ -18,7 +18,7 @@ h1, h2 {
 
 header {
   align-items: center;
-  background-color: #1B3B6F;
+  background-color: #5C1A1B;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -75,7 +75,7 @@ main{
 }
 
 img {
-  border: 5px outset #9FB798;
+  border: 5px outset #5B6057;
 }
 
 #bio {
@@ -116,7 +116,7 @@ li {
 /*footer*/
 footer{
   align-items: center;
-  background-color: #1B3B6F;
+  background-color: #5C1A1B;
   color: #EEEEFF;
   display: flex;
   flex-direction: column;

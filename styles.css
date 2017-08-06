@@ -1,5 +1,5 @@
 body {
-  background-color: #747C92;
+  background-color: #C0BCB5;
   font-family: 'Notica', serif;
   width: 100%;
 }
@@ -14,28 +14,29 @@ h1, h2 {
   font-family: 'Cinzel', serif;
 }
 
+#more-info {
+  font-size: 1.2em;
+}
+
 /*header section */
 
 header {
   align-items: center;
-  background-color: #5C1A1B;
+  background-color: #B4393E;
+  box-shadow: 1px 1px 10px 1px #000103;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0px;
   padding: 10px 40px;
 }
 
 h1 {
   color: #EEEEFF;
-  margin: 10px 0 10px 13%;
-  /*text-shadow: 2px 2px  5px #000103;*/
+  margin: 10px;
+  text-shadow: .5px .5px  2px #000103;
 }
 
-#biz-title{
-  font-size: .7em;
-  margin-left: 12px;
-}
 
 nav {
   align-items: flex-end;
@@ -74,6 +75,11 @@ main{
   max-width: 320px;
 }
 
+.pic {
+  max-height: 320px;
+  max-width: 320px;
+}
+
 img {
   border: 5px outset #5B6057;
 }
@@ -94,9 +100,15 @@ h2 {
 /*dispute-management area*/
 
 #dispute-management {
+  align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 
+ .list-intro {
+   font-size: 1.2em;
+   text-align: center;
+ }
 .services {
   display: flex;
   flex-direction: row;
@@ -113,14 +125,30 @@ li {
   margin-bottom: 10px;
 }
 
+.contact-info{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact {
+  margin: 0px;
+}
+
 /*footer*/
 footer{
   align-items: center;
-  background-color: #5C1A1B;
+  background-color: #B4393E;
   color: #EEEEFF;
   display: flex;
   flex-direction: column;
-  font-family: "Cinzel"
+  font-family: "Cinzel";
+  font-size: 1.3em;
+}
+
+h4 {
+  text-align: center;
 }
 
 #more-info {
@@ -180,6 +208,11 @@ footer{
 }
 
 @media (max-width: 450px) {
+
+  h1 {
+    text-align: center;
+  }
+
   #biz-title{
     display: block;
     text-align: center;

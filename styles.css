@@ -60,80 +60,7 @@ main{
   margin: 25px auto;
   max-width: 65%;
   padding: 15px 30px;
-}
-
-#intro {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-#picture {
-  margin-top: 25px;
-  margin-right: 20px;
-  max-width: 320px;
-}
-
-.pic {
-  max-height: 320px;
-  max-width: 320px;
-}
-
-img {
-  border: 5px outset #5B6057;
-}
-
-#bio {
-  max-width: 400px;
-}
-
-h2 {
-  margin-top: 25px;
   text-align: center;
-}
-
-#fred-bio {
-  margin: 0px 10px;
-  text-align: justify;
-}
-/*dispute-management area*/
-
-#dispute-management {
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
- .list-intro {
-   font-size: 1.2em;
-   text-align: center;
- }
-.services {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.lists {
-  padding-left: 0px;
-  width: 250px;
-}
-
-li {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-}
-
-.contact-info{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.contact {
-  margin: 0px;
 }
 
 /*footer*/
@@ -145,6 +72,9 @@ footer{
   flex-direction: column;
   font-family: "Cinzel";
   font-size: 1.3em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 h4 {
